@@ -4,15 +4,6 @@
   box-sizing: border-box;
 }
 
-/*
-ul,
-ol,
-dl {
-    padding-left: 0;
-    margin: 0 0;
-}
-
-*/
 html,
 body {
   font-size: 16px;
@@ -76,11 +67,6 @@ body {
   }
 }
 
-.header {
-  min-height: 100vh;
-  /* position: relative; */
-}
-
 .banner {
   position: relative;
   height: calc(100vh - 90px);
@@ -106,7 +92,7 @@ body {
   padding: 16px 24px;
   font-family: "Aleo";
   font-weight: 400;
-  font-size: 0.875rem;
+  font-size: 12px;
   line-height: 20px;
   letter-spacing: 0.1em;
   color: #fff;
@@ -116,38 +102,8 @@ body {
 .btn_one-color {
   background: #5373FD;
 }
-
-.btn2 {
-  width: 213px;
-  height: 60px;
-  position: relative;
-  background: #5373FD;
-}
-.btn2__one {
-  width: 109px;
-  height: 60px;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  background: #486BFE;
-  -webkit-transform-origin: top right;
-          transform-origin: top right;
-  -webkit-transform: skewX(30deg);
-          transform: skewX(30deg);
-}
-.btn2__two {
-  left: 32px;
-  top: 20px;
-  position: absolute;
-  text-align: center;
-  color: white;
-  font-size: 16px;
-  font-family: Aleo;
-  font-weight: 400;
-  text-transform: uppercase;
-  line-height: 20px;
-  letter-spacing: 1.12px;
-  word-wrap: break-word;
+.btn__two-color {
+  background: linear-gradient(45deg, #486BFE 35%, #5373FD 35%);
 }
 
 .content {
@@ -176,42 +132,37 @@ body {
   gap: 4px;
   padding: 4px;
   background: #fff;
+  width: 637px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 768px) {
+  .search {
+    width: 85vw;
+  }
 }
 @media screen and (max-width: 576px) {
   .search {
-    background: transparent;
-    justify-content: center;
-    padding: 0 14px;
-  }
-}
-@media screen and (max-width: 780px) {
-  .search {
-    background: transparent;
-    justify-content: center;
-    padding: 0 14px;
+    min-width: 180px;
+    width: 85vw;
   }
 }
 .search__input {
   border: none;
   display: inline-block;
-  height: 100%;
+  width: 100%;
   background: #fff;
-  min-width: 200px;
   padding: 10px 10px 10px 30px;
-  min-width: 420px;
-  min-height: 52px;
-  font-style: normal;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.15;
+  font-size: 14px;
+  line-height: 20px;
   letter-spacing: 0.2em;
   color: #999999;
 }
 @media screen and (max-width: 576px) {
   .search__input {
-    min-width: 280px;
-    width: 100%;
+    padding: 10px;
+    width: 75%;
   }
 }
 .search__input:focus-visible {
@@ -232,15 +183,17 @@ body {
 }
 .scroll__text {
   font-size: 14px;
-  font-family: Josefin Sans;
+  font-family: "Josefin Sans", sans-serif;
   line-height: 20px;
   letter-spacing: 2.8px;
+  text-decoration: none;
+  color: #FFFFFF;
 }
 .scroll::after {
   content: "";
   background: url("../assets/img/arrow_down.svg");
   position: absolute;
-  bottom: -11%;
+  bottom: -64%;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -376,25 +329,21 @@ body {
 .section_5 {
   padding-top: 20px;
   padding-bottom: 20px;
-  height: 100vh;
 }
 
 .section_1 {
   position: relative;
-  /* height: calc(100vh - 90px); */
   background: url(../assets/img/Section_2/WhyBackground/1360.png) no-repeat;
   background-size: cover;
   background-position-y: 28%;
   display: flex;
-  /*flex-direction: column; */
-  flex-direction: row-reverse;
   align-items: center;
-  /* justify-content: space-between; */
-  padding-top: 3vh;
+  padding-top: 2vh;
 }
 @media screen and (max-width: 768px) {
   .section_1 {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    padding: 0 calc(50vw - 420px);
   }
 }
 
@@ -433,6 +382,8 @@ body {
 @media screen and (max-width: 768px) {
   .images {
     flex-direction: row-reverse;
+    width: 90vw;
+    padding: 18px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -445,23 +396,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .image1 {
-    flex-direction: column;
-    align-items: center;
-    gap: 32px;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 768px) {
-  .image1 {
-    width: 348px;
-    height: 219px;
+    width: 45%;
     padding-bottom: 0px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .image1 {
-    width: 258px;
-    height: 162px;
   }
 }
 
@@ -475,15 +411,8 @@ body {
 }
 @media screen and (max-width: 768px) {
   .image2 {
-    padding-left: 0px;
-    width: 348px;
-    height: 219px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .image2 {
-    width: 258px;
-    height: 162px;
+    padding-left: 1px;
+    width: 45%;
   }
 }
 
@@ -492,8 +421,25 @@ body {
   font-family: "Aleo", serif;
   line-height: 40px;
   text-transform: capitalize;
-  margin: 0;
   padding-bottom: 20px;
+}
+
+.section__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 10%;
+}
+@media screen and (max-width: 768px) {
+  .section__text {
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .section_2 {
@@ -523,7 +469,6 @@ body {
 }
 
 .flex_container {
-  position: relative;
   display: flex;
   gap: 209px;
   padding-top: 138px;
@@ -634,8 +579,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*justify-content: space-between;
-  padding-top: 3vh; */
 }
 @media screen and (max-width: 768px) {
   .section_5 {
@@ -663,32 +606,19 @@ body {
   }
 }
 
-/*
-.flex_container_5{
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-
-    @media screen and (max-width:1024px) { 
-        padding-top: 0px;
-    }
-
-    @media screen and (max-width:768px) {
-        flex-direction: column; 
-        padding-top: 0px;
-    }
-}
-*/
 .card {
   position: absolute;
-  width: 558px;
+  width: 540px;
   height: 372px;
-  /*left: calc(50% - 558px/2 - 291px); */
-  /*top: 220px; */
   background-color: rgba(35, 35, 35, 0.9);
   opacity: 0.9;
   padding-left: 32px;
   padding-right: 32px;
+}
+@media screen and (max-width: 576px) {
+  .card {
+    width: 90vw;
+  }
 }
 .card__subtitle, .card__title, .card__text {
   font-family: "Josefin Sans", sans-serif;
@@ -707,23 +637,24 @@ body {
   background: #486BFE;
 }
 
-/*
 .section_5 {
-    position: relative;
-    background: url('../assets/img/Section_6/BG/BG_1360.png') no-repeat;
-    background-size: cover;
-    background-position-y: 28%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    @media screen and (max-width: 768px) {
-        height: 100vh;
-    }
+  position: relative;
+  background: url("../assets/img/Section_6/BG/BG_1360.png") no-repeat;
+  background-size: cover;
+  background-position-y: 28%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-*/
+@media screen and (max-width: 768px) {
+  .section_5 {
+    height: 100vh;
+  }
+}
+
 .review {
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding-top: 60px;
 }
@@ -740,31 +671,21 @@ body {
 }
 
 .review_photo {
-  width: 380px;
-  height: 308px;
+  width: 320px;
+  height: 100%;
   background: url("../assets/img/Section_6/IMG/1360.png") no-repeat;
   background-position: center center;
   background-size: cover;
 }
-@media screen and (max-width: 1024px) {
-  .review_photo {
-    display: flex;
-    width: 320px;
-    height: 336px;
-    background: url("../assets/img/Section_6/IMG/1024.png") no-repeat;
-  }
-}
 @media screen and (max-width: 768px) {
   .review_photo {
-    width: 720px;
+    width: 90vw;
     height: 336px;
     background: url("../assets/img/Section_6/IMG/768.png") no-repeat;
   }
 }
 @media screen and (max-width: 578px) {
   .review_photo {
-    width: 540px;
-    height: 336px;
     background: url("../assets/img/Section_6/IMG/576.png") no-repeat;
   }
 }
@@ -772,7 +693,6 @@ body {
 .review__text {
   display: flex;
   width: 760px;
-  height: 308px;
   flex-direction: column;
   background: #333333;
   padding-top: 48px;
@@ -782,28 +702,24 @@ body {
 @media screen and (max-width: 1024px) {
   .review__text {
     width: 640px;
-    height: 336px;
   }
 }
 @media screen and (max-width: 768px) {
   .review__text {
-    width: 720px;
-    height: 308px;
+    width: 90vw;
   }
 }
-@media screen and (max-width: 578px) {
-  .review__text {
-    height: 364px;
-  }
-}
-
 .quote_left {
   fill: #5373FD;
 }
 
+.big-text {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .footer {
   position: relative;
-  /* height: calc(100vh - 90px); */
   background-color: #000;
   background-size: cover;
   background-position-y: 28%;

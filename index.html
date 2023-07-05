@@ -17,9 +17,12 @@
                     <h1 class="content__title">Bhramaon</h1>
                     <h3 class="content__sub-title">Safe Travel Anywhere</h3>
                     <div class="search">
-                        <label class="search__lable">
+                        <input type="text" class="search__input" placeholder="Search Your Travel Destination">  
+                      <!--   <label class="search__lable lable">
                             <input type="text" class="search__input" placeholder="Search Your Travel Destination">  
-                        </label>
+                        </label>-->
+                      
+                     
                         
                         <button class="btn btn_one-color">
                             <img src="./assets/img/icon_search.png" alt="Icon Search">
@@ -28,7 +31,8 @@
                     </div>
                 </div>
                 <div class="scroll">
-                    <p class="scroll__text">Scrool down</p>
+                    <a href="#ContactUs" class="scroll__text">Scrool down</a>
+                    <!-- <p class="scroll__text">Scrool down</p>   -->
                 </div>
             </section>
             
@@ -36,20 +40,20 @@
                     <input type="checkbox" class="burger" id="nav-burger">
                     <label for="nav-burger" class="burger-img"></label>
                     <div class="logo">
-                        <a href="#" class="logo__link">Bhromaon</a>
+                        <a href="#section_1" class="logo__link">Bhromaon</a>
                     </div>
                     <ul class="menu">
                         <li class="menu__item">
-                            <a href="" class="menu__link">Who We Are</a>
+                            <a href="#section_2" class="menu__link">Who We Are</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">What We Do</a>
+                            <a href="#section_3" class="menu__link">What We Do</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Travel With Us</a>
+                            <a href="#section_4" class="menu__link">Travel With Us</a>
                         </li>
                         <li class="menu__item">
-                            <a href="" class="menu__link">Contact Us</a>
+                            <a href="#section_5" class="menu__link">Contact Us</a>
                         </li>
                     </ul>
                  </nav>
@@ -59,18 +63,14 @@
             
          </header>
         <main class="main">
-           <section class="section section_1">
+           <section id="section_1" class="section section_1">
             <div class="container_1_flex">
                  
-                <div class="content">
+                <div class="content text-left">
                     <h2 class="section__title">Why Choose Us</h2>
                     <p class="section__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
                     <p class="section__text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-                    <button class="btn btn_one-color">Explore Places </button>
-                </div>
-                <div class="btn2" >
-                    <div class="btn2__one" ></div>
-                    <div class="btn2__two" >Explore Places</div>
+                    <button class="btn btn__two-color">Explore Places </button>
                 </div>
                
                   </div>
@@ -110,35 +110,40 @@
                     </div>
             </section>
             
-            <section class="section section_3">
+            <section id="section_3" class="section section_3">
                 <div class="card">
                     <h4 class="card__subtitle">Spain</h4>
                     <h3 class="card__title">Grand Spain Madrid</h3>
                     <p class="card__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                    <button class="btn btn_one-color">book now</button>
+                    <button class="btn btn__two-color">book now</button>
                 </div>
             </section>
-            <section class="section section_4">
+            <section id="section_4" class="section section_4">
                 <div class="card">
                     <h4 class="card__subtitle">Spain</h4>
                     <h3 class="card__title">Grand Spain Madrid</h3>
                     <p class="card__text">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-                    <button class="btn btn_one-color">book now</button>
+                    <button class="btn btn__two-color">book now</button>
                 </div>
             </section>
            
-            <section class="section section_5">
+            <section id="section_5" class="section section_5">
                 <h2 class="section__title">What Our  Tourists Say</h2>
                 <div class="review">
-                    <div class="review_photo"></div>
+                    <div class="review_photo">
+                      
+                    </div>
                     <div class="review__text">
-                        <h3>Sam Sumon </h3>
-                        <p class="section__text"> <span class="quote" >                    <svg width="20" height="20">
+                        <h3 class="card__title big-text">Sam Sumon </h3>
+                        <p class="card__text"> <span class="quote" > 
+                            <svg width="20" height="20">
                             <use xlink:href="./assets/sprite.svg#quote_left" class="quote_left"></use>
-                        </svg></span> But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
+                        </svg></span> 
+                        But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
                     </div>
                 </div>
             </section>
+          
         </main>
         <footer id="ContactUs" class="footer">
             <div class="footer_content">
